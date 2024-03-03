@@ -6,12 +6,23 @@ export default {
     components: {
         SnackComponentVue, ChoicesComponentVue
     },
+    data(){
+        return {
+            choices: ''
+        }
+    },
+    methods: {
+        recebeDados(data){
+            this.choices = data
+            console.log('choice', data)
+        }
+    }
 }
 </script>
 
 <template>
-    <div class="mt-16 flex flex-col items-center md:flex-row md:container md:mx-auto md:justify-around">
-        <SnackComponentVue />
-        <ChoicesComponentVue />
+    <div class="mt-8 flex flex-col items-center md:flex-row md:container md:mx-auto md:justify-around">
+        <SnackComponentVue :choices="choices" />
+        <ChoicesComponentVue @recebe-data="recebeDados"/>
     </div>
 </template>
