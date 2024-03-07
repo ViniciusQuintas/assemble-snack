@@ -1,5 +1,5 @@
 <template>
-    <div class="px-5 py-10 mt-14 mb-10 md:mt-0 bg-[#d7263d] rounded-2xl md:p-12">
+    <div class="px-5 py-10 mt-14 mb-10 md:mt-0 bg-[#863e57] rounded-2xl md:p-12">
         <div class="mb-6">
             <h1 class="font-bold text-slate-100 text-xl md:text-3xl">Escolha seus ingredientes: </h1>
         </div>
@@ -24,7 +24,7 @@
                 <div>
                     <input type="checkbox" name="alface" id="alface" class="mr-1 accent-[#64b5f6]" value="alface"
                         v-model="input_alface">
-                    <label class="text-slate-100" for="">Alface</label>
+                    <label class="text-slate-100" for="alface">Alface</label>
                 </div>
             </div>
         </div>
